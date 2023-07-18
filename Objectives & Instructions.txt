@@ -1,0 +1,15 @@
+OBJECTIVES
+
+1. Creating lists
+2.  Inserting a Favicon
+3. Background images
+4. Application of flex and grid (css)
+
+
+
+
+INSTRUCTIONS
+1. Create a branch on github (url:  https://github.com/Anonymous-Roys/Investment-In-Innovation.git)
+2. Clone the project
+2. After you're done with the assignment, push it back to git(your own created branch) for review.
+
