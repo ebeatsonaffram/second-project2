@@ -1,12 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Html Forms</title>           
-        
-    
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="alert.css">
+    <link rel="stylesheet" href="project_1.css">
+    <link rel="icon" href="Screenshots/images.ico" type="image/x-icon">
+    <link rel="icon" href="Screenshots/images.ico" type="image/vnd.microsoft.icon">
+    <link rel="icon" href="Screenshots/images.ico" type="image/png">
+    <link rel="icon" href="Screenshots/images.ico" sizes="32x32" type="image/png">
+    <link rel="icon" href="Screenshots/images.ico" sizes="16x16" type="image/png">
+    <link rel="shortcut icon" hrefpng="Screenshots/images.ico">
+
+
+    <title>Forms</title>
+    <script>
+
+        function showHint(elementId) {
+            const element = document.getElementById(elementId);
+            const alertBox = document.getElementById("alert-box");
+            const alertMessage = document.getElementById("alert-message");
+
+            alertMessage.innerText = "Please input into the " + element.getAttribute("data-label");
+            alertBox.style.display = "block";
+        }
+
+        function hideAlert() {
+            const alertBox = document.getElementById("alert-box");
+            alertBox.style.display = "none";
+        }
+    </script>
+
+
+</head>
+
 <body>
-    <h1>Investment In Innovation</h1>
+    <div class="container">
+        <h4>Investment in Innovation</h4>
+
+        <form action="submit_handler.php" method="post">
+
+            <label for="first_name">First Name:</label>
+            <input type="text" id="first_name" name="first_name" required>
+
+            <label for="last_name">Last Name:</label>
+            <input type="text" id="last_name" name="last_name" required>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="proficiency">Coding Proficiency:</label>
+            <input type="range" id="proficiency" name="proficiency" min="1" max="10" value="5">
+
+            <input type="submit" value="Submit">
+
+        </form>
+        <div class="alert-box" id="alert-box">
+            <div class="alert-icon">
+                <img src="alert-icon.png" alt="Alert Icon">
+            </div>
+
+
+        </div>
 </body>
+
 </html>

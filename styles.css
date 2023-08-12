@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    background-image: url('Screenshots/bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h4{
+    text-align: center;
+    font-size: larger;
+}
+
+.container {
+    width: 30%;
+    height: 70%;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="date"],
+form input[type="range"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.proficiency-labels {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+form input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.alert-box {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+    padding: 10px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.alert-icon img {
+    width: 24px;
+    height: 24px;
+}
+
+.alert-message {
+    margin-top: 5px;
+    font-weight: bold;
+}
+
